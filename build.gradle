@@ -1,0 +1,20 @@
+plugins {
+    id "scala"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation "org.scala-lang:scala-library:2.12.8"
+//    implementation "org.scala-lang.modules:scala-xml_2.12:1.0.6"
+}
+
+tasks.wrapper {
+    gradleVersion = "6.5"
+    distributionType = Wrapper.DistributionType.ALL
+}
